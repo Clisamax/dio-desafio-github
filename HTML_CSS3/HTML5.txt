@@ -1,75 +1,134 @@
 HTML5
-DefiniÁ„o e estrutura b·sica
-Em 1991 Tim Berners-Lee criou essa linguagem de marcaÁ„o para melhorar a comunicaÁ„o entre ele e seus colegas de trabalho no CERN, desde ent„o j· surgiram 5 versıes e o HTML se tornou a base da web.
-Com o HTML definimos o significado e a estrutura do conte˙do da web e, alÈm de texto, nossas p·ginas precisam de imagens, vÌdeos e v·rios outros formatos e para isso temos os elementos HTML.
-Um elemento HTML È formado pela tag de abertura e seus atributos, o conte˙do e uma tag de fechamento. E mais a frente veremos que existem elementos que n„o tem tag de fechamento.
-Com esses elementos podemos agrupar tipos de conte˙do, alterar tamanho e forma de fontes e adicionar diferentes mÌdias ao nossa p·gina na web.
-E agora podemos ver como È a estrutura b·sica de um arquivo HTML.
-A primeira linha do documento deve ser o <!DOCTYPE html>, apesar de parecer um elemento HTML ela apenas diz ao navegador que ele est· lidando com um arquivo do tipo HTML5. Os elementos HTML vem logo abaixo.
-<html>
-A tag html È a raiz do seu documento, todos os elementos HTML devem estar dentro dela. E nela nÛs informamos ao navegador qual È o idioma desse nosso documento, atravÈs do atributo lang, para o portuguÍs brasileiro usamos pt-BR.
-<head>
-A tag head contÈm elementos que ser„o lidos pelo navegador, como os metadados - um exemplo È o charset, que È a codificaÁ„o de caracteres e a mais comum È a UTF-8, o JavaScript com a tag script, o CSS atravÈs das tags style e link - veremos a diferenÁa quando falarmos sobre CSS - e o tÌtulo da p·gina com a tag title.
-<body>
-E dentro da tag body colocamos todo o conte˙do visÌvel ao usu·rio: textos, imagens, vÌdeos.
-Pr·tica
-Como exercÌcio para esse curso iremos construir um site pessoal, e precisamos comeÁar com a estrutura b·sica que acabamos de ver.
-Vamos criar um arquivo index.html e adicionar o doctype e os elementos html, head e body.
-Depois adicionaremos os elementos meta e title, no primeiro adicionamos o atributo charset com o valor UTF-8 para dizer ao navegador qual È a codificaÁ„o dos caracteres e no segundo podemos colocar nosso nome.
-E por ˙ltimo escreveremos nosso nome dentro do elemento body apenas para enxergarmos isso no navegador.
-Sem‚ntica
-Durante muitos anos o elemento padr„o no HTML era a div, construÌamos nosso conte˙do todo baseado nela, e assim nascia a sopa de divs.
-Mas em 2014 saiu a quinta vers„o do HTML, e com ela vieram v·rios mudanÁas importantes, como performance e acessibilidade, mas nesse curso introdutÛrio vamos focar na sem‚ntica.
-A sem‚ntica nos permite descrever mais precisamente o nosso conte˙do, agora um bloco de texto n„o È apenas uma div, agora È um article e tem mais significado assim. E temos v·rios elementos para ressignificar as divs:
-<section>
-Representa uma seÁ„o genÈrica de conte˙do quando n„o houver um elemento mais especÌfico para isso.
-<header>
-… o cabeÁalho da p·gina ou de uma seÁ„o da p·gina e normalmente contÈm logotipos, menus, campos de busca.
-<article>
-Representa um conte˙do independente e de maior relev‚ncia dentro de uma p·gina, como um post de blog, uma notÌcia em uma barra lateral ou um bloco de coment·rios. Um article pode conter outros elementos, como header, cabeÁalhos, par·grafos e imagens.
-<aside>
-… uma seÁ„o que engloba conte˙dos relacionados ao conte˙do principal, como artigos relacionados, biografia do autor e publicidade. Normalmente s„o representadas como barras laterais.
-<footer>
-Esse elemento representa o rodapÈ do conte˙do ou de parte dele, pois ele È aceito dentro de v·rios elementos, como article e section e atÈ do body. Exemplos de conte˙do de um <footer> s„o informaÁıes de autor e†links†relacionados.
-<h1>-<h6>
-Eles n„o foram criados na vers„o 5 do HTML e nem s„o especÌficos para sem‚ntica, mas servem para esse propÛsito. S„o utilizados para marcar a import‚ncia dos tÌtulos, sendo <h1> o mais importante e <h6> o menos. Uma dica: use apenas um <h1> por p·gina, pois ele representa o objetivo da sua p·gina.
-Pr·tica
-Dando continuidade ao nosso site iremos montar sua estrutura. Pensei em adicionarmos um cabeÁalho com nosso nome, uma lista de posts (como um blog) e um rodapÈ para nossos contatos.
-Vamos abrir nosso arquivo index.html e comeÁar pelo cabeÁalho: criamos um <header> logo abaixo do <body> e colocamos o tÌtulo da nossa p·gina dentro de um <h1>.
-Depois criaremos a lista de postagens: abrimos um elemento section e dentro dele adicionamos outro <header> contendo um <h2>. Notem que eu posso ter mais de um <header> na p·gina.
-Para criar nossa postagem adicionamos um <article> com um <header> e um <h3>.
-O ˙ltimo passo desta etapa È criar um rodapÈ para nossas informaÁıes de contato: crie um elemento footer antes de fechar o </body>.
-N„o se preocupe com o layout e com conte˙do da p·gina, nÛs vamos tratar isso mais a frente.
-Textos e links
-A criaÁ„o do HTML foi motivada pela necessidade de compartilhar textos e documentos, e mesmo depois de quase 30 anos, com toda a evoluÁ„o da web, isso ainda representa uma boa parte do conte˙do da web.
-J· falamos anteriormente sobre os elementos h1-h6 e, eles s„o essenciais para nos indicar visualmente a import‚ncia e localizaÁ„o de seÁıes de texto na p·gina, mas para textos maiores e mais densos usamos o elemento p.
-O <p> representa um par·grafo, mas ele n„o suporta apenas texto, podemos adicionar imagens, cÛdigo, vÌdeos e v·rios outros tipos de conte˙do dentro dele.
-Um outro elemento interessante e extremamente necess·rio na web È o <a> - que significa anchor/‚ncora, ele representa um hyperlink, È ele que interliga v·rios conte˙dos e p·ginas na web.
-O elemento a tem v·rios atributos, mas vamos focar em dois, o href e o target.
-O href representa o†hyperlink†para onde sua ‚ncora aponta, pode ser uma p·gina do seu ou de outro site, um e-mail e atÈ mesmo um telefone, os dois ˙ltimos precisam dos prefixos mailto: e tel:, respectivamente.
-O target neste momento vai servir para nos ajudar a abrir nossos links em outra aba do navegador usando o valor _blank.
-Pr·tica
-Vamos adicionar um texto fictÌcio a nossa postagem: logo apÛs o fechamento do </header> vamos adicionar um elemento p e inserir um texto que vamos retirar do site†lipsum.com
-E em alguma parte deste texto vamos adicionar um†hiperlink†para outra p·gina e um para nosso e-mail.
-Criarei um†hyperlink†para meu perfil no†LinkedIn:†adicione o†hyperlink†no atributo href e o valor _blank no atributo target, assim o†link†ser· aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: <a href="mailto:lucas@vilaboim.com" target="_blank">lucas@vilaboim.com</a>
-Imagens
-A web tambÈm È feita de imagens e para represent·-las temos o elemento <img>, ele È um daqueles elementos sem tag de fechamento.
-O elemento img È bem simples, contendo apenas 2 atributos prÛprios, o src e o alt.
-O src È obrigatÛrio e guarda o caminho para a imagem que vocÍ quer mostrar na p·gina.
-O alt n„o È obrigatÛrio mas È altamente recomendado por melhorar a acessibilidade, ele mostra a descriÁ„o da imagem caso ela n„o carregue e leitores de tela usam esse atributo para descrever a imagem para o usu·rio saber o que ela significa.
-Pr·tica
-Vamos adicionar uma imagem ao cabeÁalho da p·gina e uma imagem a postagem.
-Primeiro vamos colocar as imagens na pasta do nosso projeto. Para a imagem do cabeÁalho eu escolhi uma foto minha com 100†pixels†de largura e 100†pixels†de altura e para a imagem da postagem eu procurei por†html code†no site Unsplash, escolhi uma das imagens e deixei ela com 960†pixels†de largura por 322†pixels†de altura.
-Dentro do primeiro <header> da p·gina e antes do <h1> iremos adicionar um elemento img e no atributo src colocamos o caminho para a nossa foto, /lucas-vilaboim.jpg, e o atributo alt deve conter um significado para a imagem, como no meu caso È uma ilustraÁ„o, colocarei†IlustraÁ„o do rosto de Lucas Vilaboim.
-E dentro do <header> do <article> vamos fazer a mesma coisa, mas agora depois do <h3>, e no atributo alt colocaremos†Editor de texto mostrando cÛdigos HTML.
-Listas
-Os ˙ltimos elementos que veremos neste mÛdulo s„o os relacionados a listas: <ul>, <ol> e <li>.
-Listas servem para agrupar uma coleÁ„o de itens, como uma lista de ingredientes ou, como ser· no nosso caso, uma lista com contatos.
-O elemento ul cria uma lista n„o ordenada, onde a ordem dos elementos n„o È importante, e È representada com pontos, cÌrculos ou quadrados.
-O <ol> serve para criar lista ordenadas, nessas a ordem importa, portanto elas s„o representadas com n˙meros, algarismos romanos ou letras.
-E o elemento li È um item dentro de uma dessas listas. Um <li> pode conter v·rios tipos de conte˙dos, como par·grafos, imagens e atÈ outras listas.
-Pr·tica
-Adicionaremos uma lista de contatos ao rodapÈ da nossa p·gina, e para isso usaremos tambÈm o elemento†a†que vimos anteriormente.
-Crie um elemento ul e dentro dele adicione um <li> com um elemento a, no atributo href adicione o†link†de alguma rede social que vocÍ mantenha e, no conte˙do da ‚ncora coloque o nome dessa rede.
-†
+Defini√ß√£o e estrutura b√°sica
+Em 1991 Tim Berners-Lee criou essa linguagem de marca√ß√£o para melhorar a comunica√ß√£o entre ele e seus colegas de trabalho no CERN, desde ent√£o j√° surgiram 5 vers√µes e o HTML se tornou a base da web.
 
+Com o HTML definimos o significado e a estrutura do conte√∫do da web e, al√©m de texto, nossas p√°ginas precisam de imagens, v√≠deos e v√°rios outros formatos e para isso temos os elementos HTML.
+
+Um elemento HTML √© formado pela tag de abertura e seus atributos, o conte√∫do e uma tag de fechamento. E mais a frente veremos que existem elementos que n√£o tem tag de fechamento.
+
+Com esses elementos podemos agrupar tipos de conte√∫do, alterar tamanho e forma de fontes e adicionar diferentes m√≠dias ao nossa p√°gina na web.
+
+E agora podemos ver como √© a estrutura b√°sica de um arquivo HTML.
+
+A primeira linha do documento deve ser o <!DOCTYPE html>, apesar de parecer um elemento HTML ela apenas diz ao navegador que ele est√° lidando com um arquivo do tipo HTML5. Os elementos HTML vem logo abaixo.
+
+<html>
+
+A tag html √© a raiz do seu documento, todos os elementos HTML devem estar dentro dela. E nela n√≥s informamos ao navegador qual √© o idioma desse nosso documento, atrav√©s do atributo lang, para o portugu√™s brasileiro usamos pt-BR.
+
+<head>
+
+A tag head cont√©m elementos que ser√£o lidos pelo navegador, como os metadados - um exemplo √© o charset, que √© a codifica√ß√£o de caracteres e a mais comum √© a UTF-8, o JavaScript com a tag script, o CSS atrav√©s das tags style e link - veremos a diferen√ßa quando falarmos sobre CSS - e o t√≠tulo da p√°gina com a tag title.
+
+<body>
+
+E dentro da tag body colocamos todo o conte√∫do vis√≠vel ao usu√°rio: textos, imagens, v√≠deos.
+
+Pr√°tica
+Como exerc√≠cio para esse curso iremos construir um site pessoal, e precisamos come√ßar com a estrutura b√°sica que acabamos de ver.
+
+Vamos criar um arquivo index.html e adicionar o doctype e os elementos html, head e body.
+
+Depois adicionaremos os elementos meta e title, no primeiro adicionamos o atributo charset com o valor UTF-8 para dizer ao navegador qual √© a codifica√ß√£o dos caracteres e no segundo podemos colocar nosso nome.
+
+E por √∫ltimo escreveremos nosso nome dentro do elemento body apenas para enxergarmos isso no navegador.
+
+Sem√¢ntica
+Durante muitos anos o elemento padr√£o no HTML era a div, constru√≠amos nosso conte√∫do todo baseado nela, e assim nascia a sopa de divs.
+
+Mas em 2014 saiu a quinta vers√£o do HTML, e com ela vieram v√°rios mudan√ßas importantes, como performance e acessibilidade, mas nesse curso introdut√≥rio vamos focar na sem√¢ntica.
+
+A sem√¢ntica nos permite descrever mais precisamente o nosso conte√∫do, agora um bloco de texto n√£o √© apenas uma div, agora √© um article e tem mais significado assim. E temos v√°rios elementos para ressignificar as divs:
+
+<section>
+
+Representa uma se√ß√£o gen√©rica de conte√∫do quando n√£o houver um elemento mais espec√≠fico para isso.
+
+<header>
+
+√â o cabe√ßalho da p√°gina ou de uma se√ß√£o da p√°gina e normalmente cont√©m logotipos, menus, campos de busca.
+
+<article>
+
+Representa um conte√∫do independente e de maior relev√¢ncia dentro de uma p√°gina, como um post de blog, uma not√≠cia em uma barra lateral ou um bloco de coment√°rios. Um article pode conter outros elementos, como header, cabe√ßalhos, par√°grafos e imagens.
+
+<aside>
+
+√â uma se√ß√£o que engloba conte√∫dos relacionados ao conte√∫do principal, como artigos relacionados, biografia do autor e publicidade. Normalmente s√£o representadas como barras laterais.
+
+<footer>
+
+Esse elemento representa o rodap√© do conte√∫do ou de parte dele, pois ele √© aceito dentro de v√°rios elementos, como article e section e at√© do body. Exemplos de conte√∫do de um <footer> s√£o informa√ß√µes de autor e links relacionados.
+
+<h1>-<h6>
+
+Eles n√£o foram criados na vers√£o 5 do HTML e nem s√£o espec√≠ficos para sem√¢ntica, mas servem para esse prop√≥sito. S√£o utilizados para marcar a import√¢ncia dos t√≠tulos, sendo <h1> o mais importante e <h6> o menos. Uma dica: use apenas um <h1> por p√°gina, pois ele representa o objetivo da sua p√°gina.
+
+Pr√°tica
+Dando continuidade ao nosso site iremos montar sua estrutura. Pensei em adicionarmos um cabe√ßalho com nosso nome, uma lista de posts (como um blog) e um rodap√© para nossos contatos.
+
+Vamos abrir nosso arquivo index.html e come√ßar pelo cabe√ßalho: criamos um <header> logo abaixo do <body> e colocamos o t√≠tulo da nossa p√°gina dentro de um <h1>.
+
+Depois criaremos a lista de postagens: abrimos um elemento section e dentro dele adicionamos outro <header> contendo um <h2>. Notem que eu posso ter mais de um <header> na p√°gina.
+
+Para criar nossa postagem adicionamos um <article> com um <header> e um <h3>.
+
+O √∫ltimo passo desta etapa √© criar um rodap√© para nossas informa√ß√µes de contato: crie um elemento footer antes de fechar o </body>.
+
+N√£o se preocupe com o layout e com conte√∫do da p√°gina, n√≥s vamos tratar isso mais a frente.
+
+Textos e links
+A cria√ß√£o do HTML foi motivada pela necessidade de compartilhar textos e documentos, e mesmo depois de quase 30 anos, com toda a evolu√ß√£o da web, isso ainda representa uma boa parte do conte√∫do da web.
+
+J√° falamos anteriormente sobre os elementos h1-h6 e, eles s√£o essenciais para nos indicar visualmente a import√¢ncia e localiza√ß√£o de se√ß√µes de texto na p√°gina, mas para textos maiores e mais densos usamos o elemento p.
+
+O <p> representa um par√°grafo, mas ele n√£o suporta apenas texto, podemos adicionar imagens, c√≥digo, v√≠deos e v√°rios outros tipos de conte√∫do dentro dele.
+
+Um outro elemento interessante e extremamente necess√°rio na web √© o <a> - que significa anchor/√¢ncora, ele representa um hyperlink, √© ele que interliga v√°rios conte√∫dos e p√°ginas na web.
+
+O elemento a tem v√°rios atributos, mas vamos focar em dois, o href e o target.
+
+O href representa o hyperlink para onde sua √¢ncora aponta, pode ser uma p√°gina do seu ou de outro site, um e-mail e at√© mesmo um telefone, os dois √∫ltimos precisam dos prefixos mailto: e tel:, respectivamente.
+
+O target neste momento vai servir para nos ajudar a abrir nossos links em outra aba do navegador usando o valor _blank.
+
+Pr√°tica
+Vamos adicionar um texto fict√≠cio a nossa postagem: logo ap√≥s o fechamento do </header> vamos adicionar um elemento p e inserir um texto que vamos retirar do site lipsum.com
+
+E em alguma parte deste texto vamos adicionar um hiperlink para outra p√°gina e um para nosso e-mail.
+
+Criarei um hyperlink para meu perfil no LinkedIn: adicione o hyperlink no atributo href e o valor _blank no atributo target, assim o link ser√° aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: <a href="mailto:lucas@vilaboim.com" target="_blank">lucas@vilaboim.com</a>
+
+Imagens
+A web tamb√©m √© feita de imagens e para represent√°-las temos o elemento <img>, ele √© um daqueles elementos sem tag de fechamento.
+
+O elemento img √© bem simples, contendo apenas 2 atributos pr√≥prios, o src e o alt.
+
+O src √© obrigat√≥rio e guarda o caminho para a imagem que voc√™ quer mostrar na p√°gina.
+
+O alt n√£o √© obrigat√≥rio mas √© altamente recomendado por melhorar a acessibilidade, ele mostra a descri√ß√£o da imagem caso ela n√£o carregue e leitores de tela usam esse atributo para descrever a imagem para o usu√°rio saber o que ela significa.
+
+Pr√°tica
+Vamos adicionar uma imagem ao cabe√ßalho da p√°gina e uma imagem a postagem.
+
+Primeiro vamos colocar as imagens na pasta do nosso projeto. Para a imagem do cabe√ßalho eu escolhi uma foto minha com 100 pixels de largura e 100 pixels de altura e para a imagem da postagem eu procurei por html code no site Unsplash, escolhi uma das imagens e deixei ela com 960 pixels de largura por 322 pixels de altura.
+
+Dentro do primeiro <header> da p√°gina e antes do <h1> iremos adicionar um elemento img e no atributo src colocamos o caminho para a nossa foto, /lucas-vilaboim.jpg, e o atributo alt deve conter um significado para a imagem, como no meu caso √© uma ilustra√ß√£o, colocarei Ilustra√ß√£o do rosto de Lucas Vilaboim.
+
+E dentro do <header> do <article> vamos fazer a mesma coisa, mas agora depois do <h3>, e no atributo alt colocaremos Editor de texto mostrando c√≥digos HTML.
+
+Listas
+Os √∫ltimos elementos que veremos neste m√≥dulo s√£o os relacionados a listas: <ul>, <ol> e <li>.
+
+Listas servem para agrupar uma cole√ß√£o de itens, como uma lista de ingredientes ou, como ser√° no nosso caso, uma lista com contatos.
+
+O elemento ul cria uma lista n√£o ordenada, onde a ordem dos elementos n√£o √© importante, e √© representada com pontos, c√≠rculos ou quadrados.
+
+O <ol> serve para criar lista ordenadas, nessas a ordem importa, portanto elas s√£o representadas com n√∫meros, algarismos romanos ou letras.
+
+E o elemento li √© um item dentro de uma dessas listas. Um <li> pode conter v√°rios tipos de conte√∫dos, como par√°grafos, imagens e at√© outras listas.
+
+Pr√°tica
+Adicionaremos uma lista de contatos ao rodap√© da nossa p√°gina, e para isso usaremos tamb√©m o elemento a que vimos anteriormente.
+
+Crie um elemento ul e dentro dele adicione um <li> com um elemento a, no atributo href adicione o link de alguma rede social que voc√™ mantenha e, no conte√∫do da √¢ncora coloque o nome dessa rede.

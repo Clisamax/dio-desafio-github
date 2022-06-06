@@ -1,0 +1,22 @@
+Tim Berners-Lee
+
+html 1 - 1991
+html 2 - 1995
+html 3 - 1997
+html 4 - 1997
+html 5 - 2014            <!-- iniciado em 1980 apresentado em 1991-->
+
+tudo dentro de um documento html é um elemento.
+
+Estrutura básica
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta>
+<title></title>
+</head>
+<body>
+</body>
+</html>
+
