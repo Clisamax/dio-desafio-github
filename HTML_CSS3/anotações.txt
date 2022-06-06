@@ -52,3 +52,9 @@ Tags de links
 <a href="https://www.linkedin.com/in/clisamax-góes-santos-gomes-324987239/">linkedin</a>
 
  <a target="_blank"></a> Abre em outra página. 
+
+Tags image
+
+<img> elementop sem tag de fechamento
+<img src="img/avatar.jpg"
+<img alt="foto de Clisamax Gomes"> mostra descrição da foto quando ela não é carregada
