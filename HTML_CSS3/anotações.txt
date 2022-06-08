@@ -58,3 +58,7 @@ Tags image
 <img> elementop sem tag de fechamento
 <img src="img/avatar.jpg"
 <img alt="foto de Clisamax Gomes"> mostra descrição da foto quando ela não é carregada
+
+ul == listas não ordenadas
+ol == listas ordenadas 
+li == são os elementos da lista
