@@ -22,5 +22,27 @@ flex-shrink
 
 É a propriedade que estabelece a capacidade de redução ou compressão do tamanho de um item.
 
+Esta propriedade define a proporção com que um item deve encolher caso seja necessário. Por padrão seu valor é 0, o que indica que o item não deve encolher, e são aceitos apenas valores numéricos positivos.
 
+Assim como podemos tornar flexível o crescimento dos elementos-filhos, podemos também utilizar flex-shrink para definir os seus fatores de encolhimento. 
+Quando faltar espaço em um contêiner flex, os seus elementos-filhos são encolhidos de acordo com o fator de encolhimento
+
+flex-order
+
+ordena os elementos na tela (seu valor por padrão é 0) significa que está respeitando a forma que foi descrita no html.
+alterado esse valor ele começa a organizar os elementos apartir do valor nele estabelecido.
+
+align-self 
+
+É a propriedade que estabelece o alinhamento de modo individual sobre um determinado item.
+container não pode ter um align-item definido.
+
+valores possiveis
+
+auto = valor padrão, irá respeita a definição de align-item do container.
+flex-start = inicio do container.
+flex-end = final do container.
+center = relativo ao centro de acordo com o eixo.
+stretch = ocupa totalmente os espaços relativos.
+basiline = respeita o alinhamento da tipografia.
 
