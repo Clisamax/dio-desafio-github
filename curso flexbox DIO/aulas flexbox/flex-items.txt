@@ -1,55 +1,27 @@
+Flex-grow
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 16pt">Flex-grow</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Define a proporcionalidade de crescimento dos itens, respeitando o tamanho de seus conteúdos internos.
+OBS:
+não funcionará; caso tenhamos adicionado justify-content
+ao nosso flex container. 
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="3" style="font-size: 12pt">Define
-a proporcionalidade de crescimento dos itens, respeitando o tamanho
-de seus conte&uacute;dos internos.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="3" style="font-size: 12pt">OBS:
-n&atilde;o funcionar&aacute; caso tenhamos adicionado justify-content
-ao nosso flex container. </font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Flex-grow:
+trabalha com números que pode ser 0 ou um número que
+indique a proporção de crescimento.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="3" style="font-size: 12pt">Flex-grow:
-trabalha com n&uacute;meros que pode ser 0 ou um n&uacute;mero que
-indique a propor&ccedil;&atilde;o de crescimento.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 16pt">Flex-basis</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Flex-basis
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="3" style="font-size: 12pt">&Eacute;
-a propriedade que estabelece o tamanho inicial do item antes das
-distribui&ccedil;&otilde;es de espa&ccedil;os restantes dentro dele,
-usando como base o conte&uacute;do interno disposto.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+É a propriedade que estabelece o tamanho inicial do item antes das distribuições de espaços restantes dentro dele, usando como base o conteúdo interno disposto.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt"><b>Valores
-poss&iacute;veis:</b></font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<ul>
-	<li><p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">auto: caso o item n&atilde;o
-	tenha tamanho, este ser&aacute; proporcional ao conte&uacute;do do
-	item.</font></p>
-	<li><p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">Px, em&hellip;; s&atilde;o
-	valores exatos previamente definidos.</font></p>
-	<li><p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">0 (zero): ter&aacute; rela&ccedil;&atilde;o
-	com a defini&ccedil;&atilde;o do flex-grow.</font></p>
-</ul>
-</body>
-</html>
+Valores possíveis:
+
+auto: caso o item não
+tenha tamanho, este será; proporcional ao conteúdo do item.
+
+Px, em, são
+valores exatos previamente definidos.
+
+0 (zero): terá; relação com a definição do flex-grow.
