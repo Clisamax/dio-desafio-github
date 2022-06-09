@@ -1,233 +1,84 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.3.3.2 (Windows)"/>
-	<meta name="created" content="2022-06-05T09:26:10.734000000"/>
-	<meta name="changed" content="2022-06-05T12:29:23.013000000"/>
-	<style type="text/css">
-		@page { size: 21cm 29.7cm; margin: 2cm }
-		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
-	</style>
-</head>
-<body lang="pt-BR" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0cm">
-<font size="4" style="font-size: 16pt">Display-flex</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Display Flex
+torna a tag em um elemento do tipo flex container, e assim automaticamente todos os seus filhos diretos tornam-se flex-itens.
+Flex-direction
+É a propriedade que estabelece os eixos principal do container, definindo
+assim a direção que os flex items são colocados
+não flex container. Padrão do flex container  o horizontal.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">torna
-a tag em um elemento do tipo flex container, e assim automaticamente
-todos os seus filhos diretos tornam-se flex-items.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Os eixos
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Flex-direction</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+row(padrão):
+à direção do texto, esquerda para direita.
+row-reverse:
+	sentido oposto à direção do texto.
+column:
+	ordenação de cima para baixo, em coluna única.
+column-reverse:
+	ordenação inversa, de baixo para cima.
+Flex-wrap
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">&Eacute;
-a propriedade que estabelece eixos principal do container, definindo
-assim a dire&ccedil;&atilde;o que os flex items s&atilde;o colocados
-no flex container.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+a propriedade que define se os itens devem ou não quebrar
+alinha.Por
+padro eles não quebram linhas, isso faz com que os
+flex itens sejam compactados alm do limite do conteúdo.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Padr&atilde;o
-do flex container &eacute; o horizontal.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Nowrap:
+	 o padro, não permite quebra de linha.
+Wrap:
+permite a quebra de linha assim que um dos flex itens não puder mais ser compactado.
+Wrap-reverse:
+permite a quebra de linha assim que um dos flex itens não puder mais ser compactado, porm na direção contrária da linhas, acima.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Os
-eixos&hellip;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Flex-flow
+um atalho para as propriedades flex-direction, flex-wrap.
+Porém seu uso não é tão comum, visto que, quando mudamos o flex-direction para column, mantemos o padro do flex-wrap que é nowrap.
 
-</p>
-<ul>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">row(padr&atilde;o):
-	&agrave; dire&ccedil;&atilde;o do texto, esquerda para direita.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">row-reverse:
-	sentido oposto &agrave; dire&ccedil;&atilde;o do texto.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">column:
-	ordena&ccedil;&atilde;o de cima para baixo, em coluna &uacute;nica.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">column-reverse:
-	ordena&ccedil;&atilde;o inversa, de baixo para cima.</font></p>
-</ul>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Essa propriedade vai se encarregar de alinhar os itens dentro do container de acordo com a direção pretendida e tratar da distribuição de espaçãmento entre eles.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 16pt">Flex-wrap
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+OBS: casos seus itens esteja
+ocupando 100% de todo o container, ela não se aplica.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">&Eacute;
-a propriedade que define se os itens devem ou n&atilde;o quebrar
-alinha.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+As variações
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Por
-padr&atilde;o eles n&atilde;o quebram linhas, isso faz com que os
-flex itens sejam compactados al&eacute;m do limite do conte&uacute;do.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+flex-start: início do container.
+Flex-end: final do container.
+Center: ao centro do container.
+Space-between: cria um espaçãmento igual entre os elementos. Alinha o primeiro elemento próximo a borda esquerda e o último elemento próximo a borda direita.
+Space-around: os espaçãamentos do meio são duas vezes maiores que o inicial e final.
 
-</p>
-<ul>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Nowrap:
-	&eacute; o padr&atilde;o, n&atilde;o permite quebra de linha.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Wrap:
-	permite a quebra de linha assim que um dos flex itens n&atilde;o
-	puder mais ser compactado.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Wrap-reverse:
-	permite a quebra de linha assim que um dos flex itens n&atilde;o
-	puder mais ser compactado, por&eacute;m na dire&ccedil;&atilde;o
-	contr&aacute;ria da linhas, acima.</font></p>
-</ul>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Align-itemsTratamento
+dos flex itens de acordo com o eixo do container.O alinhamento  diferente para quando os itens estão em
+colunas ou linhas.Permite alinhamento central no eixo vertical.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Flex-flow</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Center:
+	alinhamento dos itens ao centro.
+Stretch:
+	padrão, e os flex itens cresçam igualmente.
+Flex-start:
+	alinhamento dos itens não início.
+Flex-end:
+	alinhamento dos itens não final.
+baseline:
+	alinhamento de acordo com a linha base da tipografia dos itens.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">&eacute;
-um atalho para as propriedades <b>flex-direction </b>e<b> flex-wrap.</b></font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Align-content
+a propriedade responsavel por tratar o alinhamento das linhas do container em relação ao eixo vertical do container.Precisamos que:
 
-</p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font size="4" style="font-size: 14pt">Por&eacute;m seu uso n&atilde;o
-&eacute; t&atilde;o comum, visto que, quando mudamos o flex-direction
-para column, mantemos o padr&atilde;o do flex-wrap que &eacute;
-nowrap.</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<br/>
+O container utilize quebra de linhas.(flex-wrap: wrap)
 
-</p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font size="4" style="font-size: 16pt">Justify-content </font>
-</p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<br/>
+A altura do container seja maior que a soma das linhas dos itens.
 
-</p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font size="4" style="font-size: 14pt">Essa propriedade vai se
-encarregar de alinhar os itens dentro do container de acordo com a
-dire&ccedil;&atilde;o pretendida e tratar da distribui&ccedil;&atilde;o
-de espa&ccedil;amento entre eles.</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<br/>
+Tipos de alinhamento
 
-</p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font size="4" style="font-size: 14pt">OBS: casos seus itens esteja
-ocupando 100% de todo o container, ela n&atilde;o se aplica.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font size="4" style="font-size: 14pt"><font size="4" style="font-size: 16pt"><b>As
-varia&ccedil;&otilde;es</b></font> </font>
-</p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<br/>
-
-</p>
-<ul>
-	<li><p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">flex-start: in&iacute;cio do
-	container.</font></p>
-	<li><p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">Flex-end: final do container.</font></p>
-	<li><p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">Center: ao centro do
-	container.</font></p>
-	<li><p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">Space-between: cria um
-	espa&ccedil;amento igual entre os elementos. Alinha o primeiro
-	elemento pr&oacute;ximo a borda esquerda e o &uacute;ltimo elemento
-	pr&oacute;ximo a borda direita.</font></p>
-	<li><p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">Space-around: os espa&ccedil;amentos
-	do meio s&atilde;o duas vezes maiores que o inicial e final.</font></p>
-</ul>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<br/>
-
-</p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font size="4" style="font-size: 16pt">Align-items</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Tratamento
-dos flex itens de acordo com o eixo do container.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">O
-alinhamento &eacute; diferente para quando os itens est&atilde;o em
-colunas ou linhas.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Permite
-alinhamento central no eixo vertical.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<ul>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Center:
-	alinhamento dos itens ao centro.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Stretch:
-	padr&atilde;o, e os flex itens cres&ccedil;am igualmente.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Flex-start:
-	alinhamento dos itens no in&iacute;cio.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Flex-end:
-	alinhamento dos itens no final.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">baseline:
-	alinhamento de acordo com a linha base da tipografia dos itens.</font></p>
-</ul>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 16pt">Align-content</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">&Eacute;
-a propriedade respons&aacute;vel por tratar o alinhamento das linhas
-do container em rela&ccedil;&atilde;o ao eixo vertical do container.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Precisamos
-que:</font></p>
-<ul>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">O
-	container utilize quebra de linhas.(flex-wrap: wrap)</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">A
-	altura do container seja maior que a soma das linhas dos itens.</font></p>
-</ul>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 16pt">Tipos
-de alinhamento</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<ul>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Center:
-	alinhamento dos itens ao centro.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Stretch:
-	&eacute; o padr&atilde;o e os flex itens crescem igualmente.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Flex-start:
-	alinhamento dos itens no in&iacute;cio.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Flex-end:
-	alinhamento dos itens no final.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Space-between:
-	cria um espa&ccedil;amento igual entre os elementos.</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Space-around:
-	os espa&ccedil;amentos do meio s&atilde;o duas vezes maiores que o
-	in&iacute;cio e final.</font></p>
-</ul>
-</body>
-</html>
+Center:
+	alinhamento dos itens ao centro.
+Stretch:
+	 o padrão e os flex itens crescem igualmente.
+Flex-start:
+	alinhamento dos itens não início.
+Flex-end:
+	alinhamento dos itens não final.
+Space-between:
+	cria um espaçãamento igual entre os elementos.
+Space-around:
+os espaçãmentos do meio são duas vezes maiores que o início e final.

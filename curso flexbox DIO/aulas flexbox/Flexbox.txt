@@ -1,106 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.3.3.2 (Windows)"/>
-	<meta name="created" content="2022-06-05T08:48:42.895000000"/>
-	<meta name="changed" content="2022-06-05T09:25:53.280000000"/>
-	<style type="text/css">
-		@page { size: 21cm 29.7cm; margin: 2cm }
-		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
-	</style>
-</head>
-<body lang="pt-BR" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0cm">
-<font size="5" style="font-size: 20pt">Css &ndash; flexbox</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Apresentação 
+os fundamentos e aplicação das propriedade flexbox na
+criação de  layouts responsivos, sem a necessidade a
+definição de valores fixos.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Apresenta&ccedil;&atilde;o
-os fundamentos e aplica&ccedil;&otilde;es da propriedade flexbox na
-cria&ccedil;&atilde;o de  layouts responsivos, sem a necessidade a
-defini&ccedil;&atilde;o de valores fixos.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Foi
+projetado como um layout unidimensional e como um método que
+pode oferecer distribuição de espaçamento entre itens
+em uma interface e recursos de alinhamento.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Flex Container
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Foi
-projetado como um layout unidimensional e como um m&eacute;todo que
-pode oferecer distribui&ccedil;&atilde;o de espa&ccedil;o entre itens
-em uma interface e recursos de alinhamento.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+É a tag que envolve os itens, ser&aacute; nela que aplicaremos a
+propriedade "display: flex". Transforma todos os itens
+filhos em flex itens.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Propriedades relacionadas:
+	display
+	 inicializador do container
+	flex-direction
+	direciona os itens em linhas ou colunas
+	flex-wrap
+	quebra de linha ou não.
+	flex-flow
+	abreviação para direction e wrap
+	justify-content;
+	alinha os itens do container de acordo com sua direção
+	align-items
+	alinha esses itens de acordo com o eixo do container
+	align-content
+	alinha as linhas do container
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 16pt">Flex
-Container</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Flex items
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">&Eacute;
-a tag que envolve os itens, ser&aacute; nela que aplicaremos a
-propriedade &ldquo;display: flex&rdquo;. Transforma todos os itens
-filhos em flex itens.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+São os elementos filhos diretos do flex container. E também podem se
+tornar flex container.
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Propriedades
-relacionadas:</font></p>
-<ul>
-	<p style="line-height: 100%; margin-bottom: 0cm"></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"> <font size="4" style="font-size: 14pt">display
-	&ndash; inicializador do container</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"> <font size="4" style="font-size: 14pt">flex-direction
-	&ndash; direciona os itens em linhas ou colunas</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"> <font size="4" style="font-size: 14pt">flex-wrap
-	&ndash; quebra de linha ou n&atilde;o</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"> <font size="4" style="font-size: 14pt">flex-flow
-	&ndash; abrevia&ccedil;&atilde;o para direction e wrap</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm">
-	<font size="4" style="font-size: 14pt">justify-content &ndash;
-	alinha os itens do container de acordo com sua dire&ccedil;&atilde;o</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"> <font size="4" style="font-size: 14pt">align-items
-	&ndash; alinha esses itens de acordo com o eixo do container</font></p>
-	<li><p style="line-height: 100%; margin-bottom: 0cm"> <font size="4" style="font-size: 14pt">align-content
-	&ndash; alinha as linhas do container</font></p>
-</ul>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+Propriedades
+relacionadas:
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 16pt">Flex
-items</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">S&atilde;o
-elementos filhos diretos do flex container. E tamb&eacute;m podem se
-tornar flex container.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">Propriedades
-relacionadas:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">flex-grow
-&ndash; define fator de crescimento</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">flex-basis
-&ndash; define tamanho inicial desse item antes da distribui&ccedil;&atilde;o
-do espa&ccedil;o restante dentro do container</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">flex-shrink
-&ndash; define a capacidade de redu&ccedil;&atilde;o</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">flex
-&ndash; abrevia&ccedil;&atilde;o para as tr&ecirc;s propriedades
-acima</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">order
-&ndash; ordem de distribui&ccedil;&atilde;o e listagem desses itens</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="4" style="font-size: 14pt">align-self
-&ndash; define o alinhamento de um item especifico dentro desse
-container</font></p>
+flex-grow
+ define fator de crescimento
+flex-basis
+ define tamanho inicial desse item antes da distribuição
+do espaço restante dentro do container
+flex-shrink
+ define a capacidade de redução
+flex
+ abreviação para as três propriedades acima
+order
+ ordem de distribuição e listagem desses itens
+align-self
+ define o alinhamento de um item especifico dentro desse
+container
 </body>
 </html>
