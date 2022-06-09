@@ -1,0 +1,41 @@
+CSS3
+
+criada em 1996.
+cria regras de estilos pra elementos ou grupos de elementos.
+
+ Cada elemento html é representado com uma caixza retangular que é chamada de box model.
+ o box model tem 4 aréas.
+ margin = são espaçamentos entre elementos.
+ border = circundam o pedding e o conteúdo.
+ padding = é o espaçamento entre a borda e o conteúdo.
+ content = é o conteúdo
+
+ documentação html:  https://developer.mozilla.org/pt-BR/docs/Web/HTML.
+
+ border-radius: 50%; forma um circulo.
+
+ text-tranform: uppercase = tranforma as letras em maiúscula.
+text-transform: lowercase = tranforma as letras em minuscula.
+text-transforme: capitalize = todas as primeiras em maiúscula.
+
+text-decoration: underline; coloca uma linha abaixo do texto.
+text-decoration: overline; coloca uma linha acima do  texto.
+text-decoration: line-through; coloca uma linha no centro do texto.
+
+list-style-type: estiliza as listas tanto ul como ol.
+ul == squre, circle, emojis, imagens...etc.
+ul{
+    list-style-image: url("rocket.png").
+}
+ol == upper-roman; number, lower-roman...etc.
+
+Dimensões e alinhamento
+
+width = largura; 
+height = autura; 
+
+max-width = largura maxima que o elemento pode ter.
+max-height = altura maxima que o elemento pode ter.
+
+margin = espaço entre elementos, mas tem o valor auto que serve para alinhar algum elemento automaticamente.
+text-align = serve para alinha o texto.
