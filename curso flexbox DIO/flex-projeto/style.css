@@ -4,12 +4,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 ul{
-     list-style: none;
-     margin: 0;
-     padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 ul li a{
-     text-decoration: none;
+    text-decoration: none;
 }
 .flex-container{
     display: flex;
@@ -113,7 +113,7 @@ div img{
     justify-content: space-around;
 }
 .item-serviços .list-serviços{
-   text-align: center;
+text-align: center;
 }
 .list-serviços a{
     width: 220px;
@@ -139,4 +139,4 @@ div img{
     width: 80%;
     margin: auto;
 }
-   
+
