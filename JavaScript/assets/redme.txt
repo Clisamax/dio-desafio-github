@@ -1,0 +1,16 @@
+/* 
+comentario de linha              ctrl + / atalho
+ comentario de varias linhas (fechar comentario) 
+ ++  incrementar
+ -- decrementar
+ ** esponenciação
+ == valores iguais
+ === valores e tipos iguais
+!= diferente
+!== direfentes e tipos diferentes
+&& corresponde a "e"
+|| corresponde a "ou"
+! corresponde a "nâo"
+
+
+*/
