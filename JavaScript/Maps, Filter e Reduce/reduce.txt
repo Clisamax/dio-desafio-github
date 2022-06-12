@@ -1,0 +1,14 @@
+o método reduce passa por cada item do array fazendo uma expressão escolhida, e no final vai devolver um único valor. 
+Exatamente o que precisamos para fazer a soma do valor de mercado das empresas.
+
+Ele recebe dois valores, um acumulado e um atual, no nosso caso o acumulado irá somar com o atual. 
+Como no primeiro loop da soma não temos nenhum valor acumulado, 
+então precisamos passar como segundo parâmetro esse valor, 
+que no nosso caso vai ser 0.
+
+Se não tivéssemos passado um valor de acumulado o `reduce` pegaria o primeiro item do array, 
+tomando o como se fosse o valor acumulado.
+
+const = numeros.reduce((acumulador, item) => função callback, inicial);
+
+const somaRecuce = numeros.reduce((acumulador, item) => função callback , inicial);

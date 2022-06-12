@@ -1,0 +1,6 @@
+map : coleção chave/valor. não pode haver chaves repetidas.
+set: trabalha só com valor.
+para add na coleção map usamos set.
+para add na coleção set usamos add.
+para mostrar o tamanho em set usa-se size.
+has verifica se há valor em set.

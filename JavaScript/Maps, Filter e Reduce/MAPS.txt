@@ -1,0 +1,3 @@
+Map
+com ele é possível percorrer todos os item do array, 
+executar alguma transformação nesses itens e retornar um novo array sem modificar o atual.
