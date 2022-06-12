@@ -1,0 +1,16 @@
+Promese
+
+Callbacks nunca serão chamados antes da conclusão da execução atual do loop de eventos do JavaScript. 
+Callbacks adicionadas com .then mesmo depois do sucesso ou falha da operação assíncrona, serão chamadas, como acima.
+Multiplos callbacks podem ser adicionados chamando-se .then várias vezes, para serem executados independentemente da ordem de inserção.
+ 
+ async function foo() {
+  try {
+    const result = await doSomething();
+    const newResult = await doSomethingElse(result);
+    const finalResult = await doThirdThing(newResult);
+    console.log(`Got the final result: ${finalResult}`);
+  } catch(error) {
+    failureCallback(error);
+  }
+}

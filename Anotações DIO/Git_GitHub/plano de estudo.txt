@@ -1,0 +1,13 @@
+Maps filter reduce
+Set
+Async
+Await
+metódos call e apply
+objetos 
+promise
+.json  (JavaScript Object Notation)
+fetch
+arrow function
+protótipo js
+
+https://developer.mozilla.org/pt-BR/
