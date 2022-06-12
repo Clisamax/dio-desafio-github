@@ -9,5 +9,11 @@ promise
 fetch
 arrow function
 protótipo js
+imports dinamico (importa sob demanda (promise)).
+strict mode
+javascript assincromo
+
+
+
 
 https://developer.mozilla.org/pt-BR/
