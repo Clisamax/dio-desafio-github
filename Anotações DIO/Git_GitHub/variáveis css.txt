@@ -1,0 +1,38 @@
+Olá pessoal!
+
+No CSS é possível criar variáveis, que podem ser utilizadas para estilizar sua página com mais agilidade.
+
+
+
+No CSS, declaramos as variáveis no seletor ":root{}", ao qual será reconhecido em toda página do CSS.
+
+:root {
+}
+
+
+A declaração das variáveis deverá iniciar com "--".
+
+:root{
+  --nomedavariavel: ; 
+  }
+
+
+Em seguida poderá atribuir um valor, no caso do exemplo, irei setar uma cor em hsl.
+
+:root{
+  --nomedavariavel: hsl(205, 88%, 45%);
+  }
+
+
+
+
+Utilizando a variável:
+
+Para utilizar a variável, você deverá incluir o valor "var()", e dentro dos parênteses será necessário informar a variável criada.
+
+.nomedaclasse{
+  background-color: var(--nomedavariavel);
+  }
+
+
+Esse método facilita a estilização, economizando seu tempo.
